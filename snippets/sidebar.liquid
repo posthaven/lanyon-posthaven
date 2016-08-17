@@ -35,9 +35,10 @@
   {% include 'blogroll' %}
   {% include 'tags' %}
 
-  <div class="sidebar-item sidebar-item">
-    <p>
-      Built with <a href="https://posthaven.com/">Posthaven</a>
-    </p>
-  </div>
+  <section class="sidebar-item">
+    Built with <a href="https://posthaven.com/">Posthaven</a>
+    <div class="user-menu">
+      {{ posthaven.user_menu }}
+    </div>
+  </section>
 </div>

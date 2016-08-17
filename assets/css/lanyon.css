@@ -114,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0;
 }
 
+
 @media (max-width: 48em) {
   .masthead-title {
     text-align: center;
@@ -238,6 +239,38 @@ a.sidebar-nav-item:focus {
     padding-left:  1.5rem;
     padding-right: 1.5rem;
   }
+}
+
+/* Posthaven User Menu */
+
+.sidebar .user-menu {
+  margin-bottom: 2rem;
+}
+
+.sidebar .user-menu a {
+  display: block;
+  float: left;
+  text-align: center;
+
+  width: 8em;
+  margin: 0.25em;
+  border: 1px solid;
+  padding: 0.35em 0 0.25em;
+
+  transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+  border-radius: 0.25em;
+
+  font-weight: bold;
+  color: inherit;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sidebar .user-menu a:hover {
+  border-color: #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #f9f9f9;
 }
 
 /* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
