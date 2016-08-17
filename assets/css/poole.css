@@ -233,8 +233,9 @@ textarea, input[type=text], input[type=password] {
   width: 100%;
   font-size: 1em;
   padding: 0.25rem;
-  line-height: 1;
+  line-height: 1.5;
   border: 1px solid #eee;
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
 
 input[type=checkbox] {
@@ -356,6 +357,43 @@ input[type='submit']:hover {
 
 .post footer, .post footer .share-links {
   margin-top: .25rem;
+}
+
+.responses {
+  margin-bottom: 2rem;
+}
+.responses .response {
+  margin: 1.5rem 0;
+}
+.comment-body {
+  padding: 1em;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: .25rem
+}
+.responses .response .byline {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: #7a7a7a;
+}
+.responses .response ul, .responses .response ol {
+  padding-left: 1rem;
+}
+.responses .response ul {
+  list-style: disc;
+}
+.responses .response blockquote {
+  padding-left: 0.9rem;
+  border-left: 0.1rem #ddd;
+}
+.responses table {
+  width: 100%;
+}
+.responses table, .responses table th, .responses table td {
+  border-top: 1px solid #ddd;
+}
+.responses table th, .responses table td {
+  padding: 0.33rem;
 }
 
 /*
