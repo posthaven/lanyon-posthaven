@@ -17,9 +17,9 @@ settings:
 - id: colorscheme
   label: Color Scheme
   type: radio
-  default: false
+  default: 'none'
   options:
-    - {label: 'Black', value: false}
+    - {label: 'Black', value: 'none'}
     - {label: 'Red', value: '08'}
     - {label: 'Orange', value: '09'}
     - {label: 'Yellow', value: '0a'}
