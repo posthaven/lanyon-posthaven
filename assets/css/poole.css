@@ -444,7 +444,8 @@ input[type='submit']:hover {
 /* Special Overrides for Posthaven archive-pagination */
 .pagination a.posthaven-archive-disabled {
   display: block;
-  color: inherit;
+  visibility: visible;
+  color: inherit !important;
   text-decoration: none;
 }
 .pagination a.posthaven-archive-disabled:hover {
@@ -482,7 +483,10 @@ input[type='submit']:hover {
 
 /* archive months menu */
 
-.archive-months {
+.archive-months h4 {
+  font-weight: bold;
+  color: #717171;
+  margin-top: 0;
 }
 
 .archive-months ul {
