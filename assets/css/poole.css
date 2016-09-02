@@ -364,6 +364,10 @@ input[type='submit']:hover {
   margin-top: .25rem;
 }
 
+footer.post-responses {
+  margin-bottom: 3rem;
+}
+
 .responses {
   margin-bottom: 2rem;
 }
