@@ -12,15 +12,6 @@
 
   <footer>
     <div class="details">
-      {% unless post.url.current_page? %}
-        {% if posts.comment.count > 0 %}
-          <a href="{{ post.url }}" class="{{ post.url | text_if_current }}">
-            {{ post.comment_count | pluralize: 'comment' }}
-          </a>
-          &bull;
-        {% endif %}
-      {% endunless %}
-
       {% if post.show_byline? %}
         <span class="author">
           by
@@ -31,6 +22,17 @@
           {% endif %}
         </span>
       {% endif %}
+
+      {% unless post.url.current_page? %}
+        {% if post.show_byline? %}
+           &bull;
+        {% endif %}
+        {% if post.comment_count > 0 %}
+          <a href="{{ post.url }}" class="{{ post.url | text_if_current }}">
+            {{ post.comment_count | pluralize: 'comment' }}
+          </a>
+        {% endif %}
+      {% endunless %}
     </div>
 
     {% unless post.tags == empty %}
