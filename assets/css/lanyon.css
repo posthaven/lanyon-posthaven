@@ -208,6 +208,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8rem;
 }
 
+.built-with.sidebar-item {
+  font-size: 0.7rem;
+}
+
 /* Bio */
 .sidebar .bio .profile-pic {
   margin-top: 0.25rem;
@@ -244,7 +248,7 @@ a.sidebar-nav-item:focus {
 /* Posthaven User Menu */
 
 .sidebar .user-menu {
-  margin-bottom: 2rem;
+  margin: 0.5rem 0 2rem;
 }
 
 .sidebar .user-menu a {
