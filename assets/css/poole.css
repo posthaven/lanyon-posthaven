@@ -331,6 +331,10 @@ input[type='submit']:hover {
   margin-bottom: 4em;
 }
 
+.post > figure {
+  margin: 0;
+}
+
 /* Blog post or page title */
 .page-title,
 .post-title,
